@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./循环迭代项目练习.css">
+
+</head>
+
+<body>
+    <div class="header">
+        <!-- 头部 -->
+        <div class="log"> <img src="./logo.png" alt="">
+            <span>渡一教育</span>
+        </div>
+    </div>
+    <div class="left-menu">
+        <!-- 左菜单 -->
+        <dl class="menu">
+            <dt>学生管理</dt>
+            <dd class="active" data-id="student-list">学生列表</dd>
+            <dd data-id="student-add">新增学生</dd>
+        </dl>
+    </div>
+    <div class="right-content">
+        <!-- 右边内容区 -->
+        <div class="student-list" id="student-list">
+            <!-- 列表 -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>学号</th>
+                        <th>姓名</th>
+                        <th>性别</th>
+                        <th>邮箱</th>
+                        <th>年龄</th>
+                        <th>手机号</th>
+                        <th>住址</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody id="tBody">
+                    <tr>
+                        <td>171380</td>
+                        <td>张飞</td>
+                        <td>女</td>
+                        <td>1013536769@qq.com</td>
+                        <td>18</td>
+                        <td>13145210564</td>
+                        <td>city</td>
+                        <td>
+                            <button class="edit btn">编辑</button>
+                            <button class="remove btn">删除</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="turn-page">
+                <button class="prev-btn">上一页</button>
+                <button class="next-btn">下一页</button>
+            </div>
+
+            <div class="prev-btn"></div>
+            <div class="modal">
+                <!-- 弹框 -->
+                <div class="modal-content">
+                    <h2>编辑信息</h2>
+                    <form class="student-form" id="edit-student-form">
+                        <div>
+                            <label for="name">姓名</label>
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <div>
+                            <label for="sex">性别</label>
+                            <input type="radio" id="male" name="sex" checked value="0">
+                            <label class="sex" for="male">男</label>
+                            <input type="radio" id="female" name="sex" value="1">
+                            <label class="sex" for="female">女</label>
+
+                        </div>
+                        <div>
+                            <label for="email">邮箱</label>
+                            <input type="email" id="email " name="email">
+                        </div>
+                        <div>
+                            <label for="number">学号</label>
+                            <input type="text" id="number " name="sNo" readonly>
+                        </div>
+                        <div>
+                            <label for="birthYear">出生年</label>
+                            <input type="text" id="birthYear " name="birth">
+                        </div>
+                        <div>
+                            <label for="phone">手机号</label>
+                            <input type="text" id="phone " name="phone">
+                        </div>
+                        <div>
+                            <label for="address">住址</label>
+                            <input type="text" id="address " name="address">
+
+                        </div>
+                        <div>
+                            <label for=""></label>
+                            <button id="edit-student-btn">提交
+
+                           </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="student-add" id="student-add">
+            <!-- 新增学生 -->
+            <form class="student-form" id="add-student-form">
+                <div>
+                    <label for="add-name">姓名</label>
+                    <input type="text" id="add-name" name="name">
+                </div>
+                <div>
+                    <label for="sex">性别</label>
+                    <input type="radio" id="add-male" name="sex" value="0" checked>
+                    <label class="sex" for="add-male">男</label>
+                    <input type="radio" id="add-female" value="1" name="sex">
+                    <label class="sex" for="add-female">女</label>
+
+                </div>
+                <div>
+                    <label for="add-email">邮箱</label>
+                    <input type="email" id="add-email " name="email">
+                </div>
+                <div>
+                    <label for="add-number">学号</label>
+                    <input type="text" id="add-number " name="sNo">
+                </div>
+                <div>
+                    <label for="add-birthYear">出生年</label>
+                    <input type="text" id="add-birthYear " name="birth">
+                </div>
+                <div>
+                    <label for="add-phone">手机号</label>
+                    <input type="text" id="add-phone " name="phone">
+                </div>
+                <div>
+                    <label for="add-address">住址</label>
+                    <input type="text" id="add-address " name="address">
+
+                </div>
+                <div>
+                    <label for=""></label>
+                    <button id="add-student-btn" class="btn">提交</button>
+                    <input type="reset" class="btn" value="重置">
+
+                </div>
+
+
+            </form>
+
+
+        </div>
+    </div>
+    <script src="./循环迭代项目练习.js"></script>
+
+
+
+
+</body>
+
+</html>
